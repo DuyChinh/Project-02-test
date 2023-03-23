@@ -1,0 +1,269 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --font-heading: "Sen", sans-serif;
+    --primary-color: #ffb900;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+
+/* ===================Common============== */
+.main-content {
+    width: 1170px;
+    max-width: calc(100vw - 48px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+    min-width: 118px;
+    padding: 11px 8px;
+    background: #171100;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    text-align: center;
+    color: #ffffff;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+/* ===================Header================== */
+.header {
+    padding: 36px 0px 12px;
+    background-color: #fffcf4;
+}
+
+.fix-header {
+    position: sticky;
+    top: -24px;
+    z-index: 1;
+}
+
+.header .menu {
+    display: flex;
+    align-items: center;
+}
+
+.header .navbar {
+    margin-left: auto;
+}
+
+.header .menu .navbar ul {
+    display: flex;
+    align-items: center;
+}
+
+.header .navbar a {
+    position: relative;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: #5f5b53;
+    padding: 8px 21px;
+}
+
+.navbar a:hover,
+.navbar li.native a {
+    text-shadow: 1px 0 0 currentColor;
+    color: #171100;
+}
+
+.navbar li.native a::after {
+    position: absolute;
+    display: inline-block;
+    left: 21px;
+    bottom: 6px;
+    content: "";
+    height: 2px;
+    width: 12px;
+    background: #171100;
+    border-radius: 1px;
+}
+
+.btn-header {
+    min-width: 144px;
+}
+
+/* ===================== Hero ===================== */
+.hero {
+    padding: 52px 0 65px 0;
+    background-color: #fffcf4;
+}
+
+.hero .body {
+    display: flex;
+}
+
+.hero .body .img-block {
+    position: relative;
+    width: 48%;
+}
+
+.hero .img-block .img-hero {
+    display: block;
+    width: 470px;
+    height: 685px;
+    object-fit: cover;
+    border-radius: 20px;
+    left: 0;
+    top: 0;
+}
+
+.hero-summary {
+    position: absolute;
+    width: 244px;
+    padding: 24px;
+    background-color: #ffffff;
+    right: 0;
+    box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+    bottom: 48px;
+}
+
+.hero-summary .item {
+    display: flex;
+    align-items: center;
+}
+
+.hero-summary .item + .item {
+    margin-top: 22px;
+}
+
+.hero-summary .item .icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff9e8;
+}
+
+.hero-summary .item:nth-of-type(2) .icon {
+    background-color: #fcefff;
+}
+
+.hero-summary .item:nth-of-type(3) .icon {
+    background-color: #ebeaff;
+}
+
+.hero-summary .item .label {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #5f5b53;
+}
+
+.hero-summary .item .title {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #171100;
+}
+/* Hero-right */
+.hero .body .content-block {
+    width: 52%;
+    padding: 64px 0 0 130px;
+}
+
+.hero .content-block .title {
+    font-family: var(--font-heading);
+    width: 470px;
+    font-weight: 700;
+    font-size: 5.8rem;
+    line-height: 1.17;
+    letter-spacing: -0.02em;
+    color: #171100;
+}
+
+.hero .content-block .desc {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #5f5b53;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    gap: 0 28px;
+}
+
+.hero .content-block .desc-1 {
+    margin-top: 22px;
+}
+
+.hero .content-block .row-1 {
+    margin-top: 38px;
+}
+
+.hero .content-block .row-1 .btn {
+    min-width: 180px;
+    background-color: var(--primary-color);
+    padding: 18px 8px;
+}
+
+.hero .content-block .watch-video {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.hero .content-block .row-1 .label {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #171100;
+}
+
+.hero .content-block .row-1 .icon {
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.07);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero .content-block .desc-2 {
+    margin-top: 48px;
+}
+
+.hero .stats {
+   margin: 8px 0 0 -10px;
+}
+
+.hero .stats strong {
+    font-family: var(--font-heading);
+    padding: 0 28px 0 10px;
+    font-weight: 700;
+    font-size: 4.4rem;
+    line-height: 1.23;
+    color: #171100;
+}
+
+
+
+
