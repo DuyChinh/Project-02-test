@@ -538,3 +538,53 @@ a {
     background-color: var(--primary-color);
     min-width: 137px;
 }
+
+/* =================== CTA ================== */
+
+.cta {
+    margin-top: 135px;
+    padding: 65px 0;
+}
+
+.cta-body {
+    display: flex;
+}
+
+.cta .info {
+    width: 60%;
+    padding: 71px 0;
+}
+
+.cta .info .heading {
+    width: 570px;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 3.8rem;
+    line-height: 1.26;
+    letter-spacing: -0.02em;
+    color: #171100;
+}
+
+.cta .info .desc {
+    margin-top: 16px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #5f5b53;
+}
+
+.cta .btn-cta {
+    margin-top: 32px;
+    min-width: 137px;
+    background-color: var(--primary-color);
+}
+
+.cta .img-block {
+    width: 40%;
+}
+
+.cta .img-block .img-cta {
+    height: 440px;
+    border-radius: 20px;
+    object-fit: cover;
+}
