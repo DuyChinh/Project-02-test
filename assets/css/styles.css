@@ -44,6 +44,22 @@ a {
 
 .btn:hover {
     opacity: 0.9;
+    cursor: pointer;
+}
+
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 1);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line-clamp.line-2 {
+    -webkit-line-clamp: var(--line-clamp, 2);
+}
+
+.break-all {
+    word-break: break-all;
 }
 
 /* ===================Header================== */
@@ -286,6 +302,7 @@ a {
 }
 
 .courses .row-top .desc {
+    margin-top: 16px;
     width: 458px;
     font-weight: 400;
     font-size: 1.8rem;
@@ -304,12 +321,15 @@ a {
     height: 40px;
     border: 1px solid var(--primary-color);
     border-radius: 50%;
+    color: var(--primary-color);
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.courses .row-top .icon-2 {
+.courses .row-top .icon:hover {
+    cursor: pointer;
+    color: #fff;
     background-color: var(--primary-color);
 }
 
@@ -345,7 +365,7 @@ a {
     padding: 16px 22px 22px;
 }
 
-.course-guide .title {
+.course-guide .title a {
     font-weight: 600;
     font-size: 1.8rem;
     line-height: 1.67;
@@ -375,4 +395,146 @@ a {
 
 .course-guide .btn-course:hover {
     background-color: var(--primary-color);
+}
+
+/* =================== Feedback ================ */
+.feedback {
+    margin-top: 135px;
+    padding: 96px 0;
+    background-color: #2e2100;
+}
+
+.feedback-list {
+    display: flex;
+    overflow: hidden;
+}
+
+.feedback-item {
+    display: flex;
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.feedback .info .avatar {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.feedback-item .info .title {
+    margin-top: 18px;
+    font-family: var(--font-heading), sans-serif;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 1.42;
+    color: #f7f7f7;
+}
+
+.feedback-item .info .desc {
+    margin-top: 4px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #bfbcb3;
+}
+
+.feedback .info .dots {
+    margin-top: 28px;
+    display: flex;
+    gap: 6px;
+}
+
+.feedback .info .dot {
+    cursor: pointer;
+    width: 6px;
+    height: 6px;
+    border-radius: 999px;
+    background-color: #634700;
+}
+
+.feedback-item .content {
+    width: 66%;
+    margin-left: auto;
+}
+
+.feedback .info .dot.active {
+    cursor: default;
+    background-color: var(--primary-color);
+}
+
+.feedback-item .content blockquote {
+    margin-left: 30px;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 2.6rem;
+    line-height: 1.54;
+    color: #ffffff;
+}
+
+/* ================= Features =============== */
+
+.features {
+    margin-top: 135px;
+    padding: 65px 0;
+}
+
+.feature-body {
+    display: flex;
+}
+
+.features .img-block {
+    width: 48%;
+    height: 438px;
+    position: relative;
+}
+
+.features .img-block .feature-img {
+    position: absolute;
+    width: 270px;
+    height: 404px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.features .img-block .feature-img:first-child {
+    bottom: 0;
+    left: 0;
+}
+
+.features .img-block .feature-img:nth-child(2) {
+    top: 0;
+    right: 0;
+}
+
+.features .info {
+    width: 52%;
+    padding: 58px 0 58px 130px;
+}
+
+.features .info .heading {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 3.8rem;
+    line-height: 1.26;
+    letter-spacing: -0.02em;
+    color: #171100;
+}
+
+.features .info .desc {
+    margin-top: 16px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #5f5b53;
+}
+
+.features .info .extract {
+    margin-top: 16px;
+}
+
+.btn-features {
+    margin-top: 32px;
+    background-color: var(--primary-color);
+    min-width: 137px;
 }
