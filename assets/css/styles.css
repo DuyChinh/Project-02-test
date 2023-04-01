@@ -693,3 +693,81 @@ a {
 .blogs .blog-item .blog-btn:hover {
     background-color: var(--primary-color);
 }
+
+/* ================== Footer ================= */
+.footer {
+    padding: 96px 0 28px;
+    background-color: #2e2100;
+}
+
+.footer .footer-body {
+    display: flex;
+}
+
+.footer .contact .desc {
+    margin-top: 18px;
+    width: 267px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #bfbcb2;
+}
+
+.footer .contact-icon {
+    display: flex;
+    margin-top: 18px;
+    gap: 0 18px;
+}
+
+.footer .menu {
+    display: flex;
+    margin-left: 145px;
+    gap: 0 130px;
+}
+
+.footer .menu-item .title {
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #ffffff;
+}
+
+.footer .menu-item .seperate {
+    width: 130px;
+    height: 1px;
+    background-color: #59554b;
+    margin-top: 14px;
+    margin-bottom: 28px;
+}
+
+.footer .menu-item .desc {
+    white-space: nowrap;
+    margin-top: 12px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #bfbcb2;
+}
+
+.footer .menu-item .desc-1 {
+    white-space: normal;
+}
+
+.footer .menu-item .desc-1 strong {
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.footer .seperate-2 {
+    margin-top: 38px;
+    height: 1px;
+    background-color: #59554b;
+}
+
+.footer .last-desc {
+    margin-top: 28px;
+    font-size: 14px;
+    line-height: 1.86;
+    text-align: center;
+    color: #807d74;
+}
